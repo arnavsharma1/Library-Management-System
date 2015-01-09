@@ -28,7 +28,7 @@ public class Queries {
 	public Queries() {
 		try {
 			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/",
-					"root", "!$Ocean111$!");
+					"root", "password");
 			stmt = conn.createStatement();
 			stmt.execute("use library_system;");
 			updateableStmt = conn
